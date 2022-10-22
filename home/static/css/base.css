@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+/* General Styling */
+
+body {
+    background-color: #000000;
+    background-image: linear-gradient( #000000 0%, #052236 64%);
+    color: grey;
+    font-family: 'Raleway' , sans-serif;
+}
+
+h1, h3 {
+    color:aliceblue;
+}
