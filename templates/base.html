@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +15,17 @@
 </head>
 <body>
     {% block content %}
+    <div class="container-fluid w-100 p-0">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white" id="Main-nav">
+            <a class="navbar-brand p-0 mx-4" href="{% url 'index' %}">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="#navbarMenu"
+              aria-expanded="false" aria-label="toggle navigation"> 
+              
+            </button>
+
+        </nav>
+    </div>
 
     {% endblock content %}
 </body>
