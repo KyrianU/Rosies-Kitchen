@@ -1,17 +1,18 @@
 from django.db import models
-from djanog.db.models import Intergerfield
+from django.db.models import IntegerField
+
 
 # Create your models here.
 
 
-class Customer(models.model):
+class Customer(models.Model):
     """
-    Customer details model
+    Customer detail model
     """
-    customer_id = models.Autofield(primary_key=True)
-    full_name = models.Charfield(max_length=60)
-    email = models.EmailField(max_length=200, defaults="")
-    phone_number = models.PhoneNumberField(null=True)
+    customer_id = models.AutoField(primary_key=True)
+    full_name = models.CharField(max_length=60)
+    email = models.EmailField(max_length=200, default="")
+    
 
     def __str__(self):
         return str(self.full_name)
