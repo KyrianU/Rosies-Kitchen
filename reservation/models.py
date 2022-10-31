@@ -12,7 +12,6 @@ class Customer(models.Model):
     customer_id = models.AutoField(primary_key=True)
     full_name = models.CharField(max_length=60)
     email = models.EmailField(max_length=200, default="")
-    
 
     def __str__(self):
         return str(self.full_name)

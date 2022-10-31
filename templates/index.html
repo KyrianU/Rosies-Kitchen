@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
+
 {% load static %}
+
 {% block content %}
 
 
@@ -15,6 +17,28 @@
 
     </div>
 
+</div>
+<hr>
+<div class="row content mb-4 d-flex justify-content-center">
+    <div class="col-sm-6 col-lg-4 col-xl-3 text center">
+        <div>
+            <a href="{% url 'food_menu' %">
+                <img src="{% static 'images/menu.jpg' %}" alt="Menu Board">
+                <h2 class="mt-2 brand-text page-links">Menu</h2>
+
+            </a>
+        </div>
+
+    </div>
+    <div class="col-sm-6 col-lg-4 col-xl-3 text center">
+        <div>
+            <a href="{% url 'reservation' %}">
+                <img src="{% static 'images/book.jpg' %}" alt="Empty table">
+                <h2 class="mt-2 brand-text page-links">Book A Table</h2>
+            </a>
+        </div>
+
+    </div>
 </div>
 
 {% endblock content %}
