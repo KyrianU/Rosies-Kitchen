@@ -1,6 +1,65 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<h1>TEST!</h1>
+<section class="container-fluid menu">
+    <div class="row text-center">
+        <h1 class="mt-4 p-4">Our Menu</h1>
+        <hr>
+    </div>
+
+    <div class="row text-center">
+
+        <div class="col">
+            <h2>Starters</h2>
+            <hr>
+
+            <div class="row m-2 d-flex justify-content-center flex-wrap text-center">
+                {% for food in menu_list %} 
+                {% if food.type == 'Starter' %} 
+                <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+                    <div class="card-header">{{ food.name }}</div>
+                    <div class="card-body">
+                        <p class="card-text">{{ food.descripion }}</p>
+                    </div>
+                </div>
+                {% endif %} 
+                {% endfor %} 
+            </div>
+        </div>
+
+        <div class="col mains">
+            <h2>Mains</h2>
+            <hr>
+
+            <div class="row m-2 d-flex justify-content-center flex-wrap text-center">
+                {% for food in menu_list %} 
+                {% if food.type == 'Main' %} 
+                <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+                    <div class="card-header">{{ food.name }}</div>
+                    <div class="card-body">
+                        <p class="card-text">{{ food.description }}</p>
+                    </div>
+                </div>
+                {% endif %} 
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="col desserts">
+            <h2>Desserts</h2>
+            <hr>
+
+            <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+                <div class="card-header">{{ food.name }}</div>
+                <div class="card-body">
+                    <p class="card-text">{{ food.description }}</p>                      
+                </div>
+            </div>
+            {% endif %} 
+            {% endfor %} 
+        </div>
+    </div>
+
+</section>
 
 {% endblock content %}
