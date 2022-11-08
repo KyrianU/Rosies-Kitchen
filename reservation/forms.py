@@ -1,4 +1,4 @@
-from django import forms 
+from django import forms
 from .models import Reservation, Customer
 from django.conf import settings
 
@@ -11,7 +11,7 @@ class CustomerForms(forms.ModelForm):
 
 
 class ReservationForm(forms.ModelForm):
-  
+
     class Meta:
         model = Reservation
         fields = ('no_of_guest', 'requested_date', 'requested_time')
