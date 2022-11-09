@@ -32,6 +32,18 @@ class Table(models.Model):
 
 
 class Reservation(models.Model):
+
+    def validate_date(reservation_time_and_date):
+        """
+        function to validate date
+        so that booking cannot be
+        in the past
+        """
+        if reservation_time_and_date < date.now():
+            raise ValidationError(
+                message='Date cannot be in the past'
+            )
+
     """
     Reservation model,
     """
@@ -40,6 +52,10 @@ class Reservation(models.Model):
         Customer, on_delete=models.CASCADE, null=True)
     table = models.ForeignKey(
         Table, on_delete=models.CASCADE, null=True)
+    guest_choices = [(1, "1 person"), (2, "2 people"),
+                     (3, "3 people"), (4, "4 people"),
+                     (5, "5 people"), (6, "6 people")]
+    no_of_guest = models.IntegerField(choices=guest_choices, default=1)
     date_requested = models.DateField()
     time_requested = models.TimeField()
 
