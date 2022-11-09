@@ -9,7 +9,7 @@
             <h1 class="m4 text-center">Request a Booking</h1>
             <form method="POST" class="reservation-form full-form">
                 {% csrf_token %} 
-                
+                {{ form|crips }}
                 <br>
                 <button type="submit" value="post" class="btn btn-primary mb-4">Request Reservation</button>
             </form>
