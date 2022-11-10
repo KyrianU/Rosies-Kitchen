@@ -17,9 +17,9 @@
                 {% for food in menu_list %} 
                 {% if food.type == 'Starter' %} 
                 <div class="card text-white bg-dark mb-3" style="width: 18rem;">
-                    <div class="card-header">{{ food.name }}</div>
+                    <div class="card-header">{{ item.name }}</div>
                     <div class="card-body">
-                        <p class="card-text">{{ food.descripion }}</p>
+                        <p class="card-text">{{ item.descripion }}</p>
                     </div>
                 </div>
                 {% endif %} 
@@ -35,9 +35,9 @@
                 {% for food in menu_list %} 
                 {% if food.type == 'Main' %} 
                 <div class="card text-white bg-dark mb-3" style="width: 18rem;">
-                    <div class="card-header">{{ food.name }}</div>
+                    <div class="card-header">{{ item.name }}</div>
                     <div class="card-body">
-                        <p class="card-text">{{ food.description }}</p>
+                        <p class="card-text">{{ item.description }}</p>
                     </div>
                 </div>
                 {% endif %} 
@@ -55,11 +55,9 @@
                     <p class="card-text">{{ food.description }}</p>                      
                 </div>
             </div>
-            {% endif %} 
-            {% endfor %} 
+            {% endblock %} 
+            
         </div>
     </div>
 
 </section>
-
-{% endblock content %}

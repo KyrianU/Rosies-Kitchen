@@ -10,7 +10,7 @@ from django.contrib.messages.views import SuccessMessageMixin
 # Create your views here.
 class RequestReservationview(SuccessMessageMixin, CreateView):
     model = Reservation
-    form = ReservationForm
+    form_class = ReservationForm
     template_name = 'reservation.html'
     reservation_success = '/my_reservations'
     reservation_message = 'Booking created'
@@ -24,7 +24,7 @@ class ManageReservation(ListView):
 
 class ReservationEdit(SuccessMessageMixin, UpdateView):
     model = Reservation
-    form = ReservationForm
+    form_class = ReservationForm
     template_name = 'edit_my_reservation.html'
     reservation_sucess = 'my_reservations'
     reservation_message = 'Reservation Updated!'

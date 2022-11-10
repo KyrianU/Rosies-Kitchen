@@ -1,0 +1,1 @@
+web: gunicorn rosies_kitchen.wsgi
