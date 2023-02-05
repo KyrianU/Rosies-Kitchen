@@ -1,6 +1,8 @@
-<!DOCTYPE html>
 {% load static %}
+
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Rosie's kitchen</title>    
     <meta charset="UTF-8">
@@ -11,6 +13,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
 
+    <script src="https://kit.fontawesome.com/2d05664855.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.8.2.js"></script>
     <script src="https://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
 </head>
@@ -56,24 +59,33 @@
     {% block content %}
     {% endblock %}
 
-    <footer class="big-light text-center text-white mt-auto">
-        <div class="container p-4 pb-0">
-            <div class="mb-4">
-                <a class="btn btn-outline-dark btn-floating m-1" href="https://facebook.com" target="_blank" role="button">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a class="btn btn-outline-dark btn-floating m-1" href="https://twitter.com" target="_blank" role="button">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a class="btn btn-outline-dark btn-floating m=1" href="https://instagram.com" target="_blank" role="button">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a class="btn btn-outline-dark btn-floaing m=1" href="https://youtube.come" target="_blank" role="button">
-                    <i class="fab fa-youtube"></i>
-                </a>
+    <footer id="footer" class="mt-5">
+        <div class="container-xl">
+            <span class="text-white my-0">Rosie's Kitchen</span>
+            <hr>
+            <div class="row row-reverse">
+                <div class="col-md-4">
+                    <h3 class="sub-title">Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/" rel="noopener" target="_blank"
+                            aria-label="Link to facebook"><i class="fab fa-facebook"></i>Facebook</a></li>
+                        <li><a href="https://www.twitter.com/" rel="noopener" target="_blank"
+                            aria-label="Link to twitter"><i class="fab fa-twitter"></i>Twitter</a></li>
+                        <li><a href="https:/www.instagram.com/" rel="noopener" target="_blank"
+                            aria-label="Link to instagram"><i class="fab fa-instagram"></i>Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="sub-title">Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i>+44(0)7700 900925</li>
+                        <li><i class="fas fa-envelope"></i>info@rosieskitchen.co.uk</li>
+                        <li><i class="fas fa-home"></i>830 Park Avenue - Chelmsford - CM49 6WN</li>
+                    </ul>
+                </div>
             </div>
-            
         </div>
+     
 
     </footer>
     
