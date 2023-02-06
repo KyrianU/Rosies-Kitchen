@@ -18,6 +18,11 @@ h1, h2 {
     background-color: #951e0e;
 }
 
+.img-header {
+    height: 300px;
+    margin: 10px;
+}
+
 /* Footer */
 
 footer {
