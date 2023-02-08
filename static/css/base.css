@@ -18,10 +18,15 @@ h1, h2 {
     background-color: #951e0e;
 }
 
+.carousel-inner {
+    height: 20rem;
+}
+
 .img-header {
     height: 300px;
     margin: 10px;
 }
+
 
 /* Footer */
 
