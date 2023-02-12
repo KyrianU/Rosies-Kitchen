@@ -1,5 +1,5 @@
 from django.db import models
-from django.db.models import IntegerField
+from django.db.models import IntegerField, AutoField
 
 
 # Create your models here.
@@ -21,9 +21,8 @@ class Table(models.Model):
     """
     Table Model
     """
-    seats = models.IntegerField()
-    min_people = models.IntegerField()
-    max_people = models.IntegerField()
+    table_id = models.AutoField(primary_key=True)
+    max_no_people = models.IntegerField()
     table_name = models.CharField(
         max_length=15, default='New Table', unique=True)
 
