@@ -22,7 +22,8 @@ class ManageReservation(ListView):
     template_name = '/my_reservations'
 
 
-class ReservationsEdit(SuccessMessageMixin, UpdateView):
+# Ammend selected or all reservations
+class ReservationEdit(SuccessMessageMixin, UpdateView):
     model = Reservation
     form_class = ReservationForm
     template_name = 'edit_reservation.html'
@@ -30,6 +31,7 @@ class ReservationsEdit(SuccessMessageMixin, UpdateView):
     reservation_message = 'Reservation Updated!'
 
 
+# Delete selected or all reservations
 class ReservationDelete(SuccessMessageMixin, DeleteView):
     model = Reservation
     reservation_success = reverse_lazy('my_reservations')
