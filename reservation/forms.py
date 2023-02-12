@@ -12,6 +12,14 @@ class CustomerForms(forms.ModelForm):
 
 class ReservationForm(forms.ModelForm):
 
+    # compare user input against current date and raise an error message
+    # if date is in the past
+    def clean_start_time(self):
+        start = self.cleaned_data('date')
+        if start < datetime.date.now():
+            raise forms.ValidationError('the date cannot be in the past.')
+        return data
+
     class Meta:
         model = Reservation
         fields = ('no_of_guest', 'date_requested', 'time_requested')
@@ -25,7 +33,7 @@ class ReservationForm(forms.ModelForm):
                 }
             ),
             'time': forms.TimeInput(
-                format=('%Y-%m-%d'),
+                format=('%H:%M'),
                 attrs={
                     'class': 'form-control',
                     'placeholder': 'Select a date',

@@ -4,8 +4,8 @@ from reservation import views
 
 urlpatterns = [
     path('', views.RequestReservationview.as_view(), name='reservation'),
-    path('manage_myreservations', views.ManageReservation.as_view(),
-         name='manage_reservations'),
+    path('my_reservations', views.ManageReservation.as_view(),
+         name='my_reservations'),
     path('edit_reservation', views.ReservationEdit.as_view(),
          name='edit_reservation'),
     path('delete_reservation', views.ReservationDelete.as_view(),
