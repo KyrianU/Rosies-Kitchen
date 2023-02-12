@@ -22,7 +22,7 @@ class ManageReservation(ListView):
     template_name = '/my_reservations'
 
 
-class ReservationEdit(SuccessMessageMixin, UpdateView):
+class ReservationsEdit(SuccessMessageMixin, UpdateView):
     model = Reservation
     form_class = ReservationForm
     template_name = 'edit_reservation.html'
