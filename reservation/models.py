@@ -21,7 +21,7 @@ class Table(models.Model):
     """
     Table Model
     """
-    table_id = models.AutoField(primary_key=True)
+    table_id = models.AutoField(default=1, primary_key=True)
     max_no_people = models.IntegerField()
     table_name = models.CharField(
         max_length=15, default='New Table', unique=True)
