@@ -25,3 +25,6 @@ CRUD functionality is very important when it comes to this webbapp as user inter
 9. As a user, I would like to be able to see all my reservation
 10. As a user, I would like to delete the booking if It's no longer convenient
 
+
+## Structure
+
