@@ -23,7 +23,7 @@ class ReservationForm(forms.ModelForm):
 
     class Meta:
         model = Reservation
-        fields = ('no_of_guest', 'date_requested', 'time_requested')
+        fields = ('name', 'no_of_guest', 'date_requested', 'time_requested')
         widget = {
             'date': forms.DateInput(
                 format=('%Y-%m-%d'),
@@ -56,7 +56,7 @@ class ReservationsEdit(forms.ModelForm):
 
     class Meta:
         model = Reservation
-        fields = ('no_of_guest', 'date_requested', 'time_requested')
+        fields = ('name', 'no_of_guest', 'date_requested', 'time_requested')
         widget = {
             'date': forms.DateInput(
                 format=('%Y-%m-%d'),
