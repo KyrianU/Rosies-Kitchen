@@ -15,14 +15,14 @@
 
             <div class="row m-2 d-flex justify-content-center flex-wrap text-center">
                 {% for food in object_list %} 
-                {% if food.item == 'starter' %}
+                
                 <div class="card text-white bg-dark mb-3" style="width: 20rem;">
                     <div class="card-header">{{ food.name }}</div>
                     <div class="card-body">
                         <p class="card-text">{{ food.descripion }}</p>
                     </div>
                 </div>
-                {% endif %}
+                
                 {% endfor %} 
             </div>
         </div>
@@ -33,14 +33,14 @@
 
             <div class="row m-2 d-flex justify-content-center flex-wrap text-center">
                 {% for food in object_list %} 
-                {% if food.item == 'main' %}
+               
                 <div class="card text-white bg-dark mb-3" style="width: 20rem;">
                     <div class="card-header">{{ food.name }}</div>
                     <div class="card-body">
                         <p class="card-text">{{ food.description }}</p>
                     </div>
                 </div>
-                {% endif %}
+                
                 {% endfor %}
             </div>
         </div>
@@ -50,14 +50,14 @@
             <hr>
             <div class="row m-2 d-flex justify-content-center flex-wrap text-center">
                 {% for food in object_list %} 
-                {% if food.item == 'dessert' %}
+                
                 <div class="card text-white bg-dark mb-3" style="width: 20rem;">
                 <div class="card-header">{{ food.name }}</div>
                 <div class="card-body">
                     <p class="card-text">{{ food.description }}</p>                      
                 </div>
             </div>
-                {% endif %}
+                
                 {% endfor %} 
             </div>
         </div>
