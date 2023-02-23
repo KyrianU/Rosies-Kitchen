@@ -1,62 +1,46 @@
 from django.db import models
 from django.db.models import IntegerField, AutoField
+from django.core.validators import MinValueValidator, MaxValueValidator
+from django.contrib.auth.models import User
+from datetime import datetime
 
 
 # Create your models here.
 
 
-class Customer(models.Model):
-    """
-    Customer detail model
-    """
-    customer_id = models.AutoField(primary_key=True)
-    full_name = models.CharField(max_length=60)
-    email = models.EmailField(max_length=200, default="")
-
-    def __str__(self):
-        return str(self.full_name)
-
-
-class Table(models.Model):
-    """
-    Table Model
-    """
-    table_id = models.AutoField(default=1, primary_key=True)
-    max_no_people = models.IntegerField()
-    table_name = models.CharField(
-        max_length=15, default='New Table', unique=True)
-
-    def __str__(self):
-        return str(self.table_name)
+time_choices = (
+    ("12:00", "12:00"),
+    ("13:00", "13:00"),
+    ("14:00", "14:00"),
+    ("15:00", "15:00"),
+    ("16:00", "16:00"),
+    ("17:00", "17:00"),
+    ("18:00", "18:00"),
+    ("19:00", "19:00"),
+    ("20:00", "20:00"),
+    ("21:00", "21:00"),
+    ("22:00", "22:00"),
+)
 
 
 class Reservation(models.Model):
-
-    def validate_date(reservation_time_and_date):
-        """
-        function to validate date
-        so that booking cannot be
-        in the past
-        """
-        if reservation_time_and_date < date.now():
-            raise ValidationError(
-                message='Date cannot be in the past'
-            )
-
-    """
-    Reservation model,
-    """
+    table_seats = models.IntegerField(
+        blank=False,
+        null=False,
+        default=1,
+        validators=[
+            MinValueValidator(1),
+            MaxValueValidator(4),
+        ]
+    )
     reservation_id = models.AutoField(primary_key=True)
-    customer = models.ForeignKey(
-        Customer, on_delete=models.CASCADE, null=True)
-    table = models.ForeignKey(
-        Table, on_delete=models.CASCADE, null=True)
-    guest_choices = [(1, "1 person"), (2, "2 people"),
-                     (3, "3 people"), (4, "4 people"),
-                     (5, "5 people"), (6, "6 people")]
-    no_of_guest = models.IntegerField(choices=guest_choices, default=1)
-    date_requested = models.DateField()
-    time_requested = models.TimeField()
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, null=True, blank=True)
+    name = models.CharField(max_length=20, null=True)
+    date = models.DateField()
+    time = models.CharField(
+        max_length=20, choices=time_choices, default="12:00")
+    date_booked = models.DateTimeField(default=datetime.now, blank=True)
 
     def __str__(self):
         return str(self.reservation_id)
