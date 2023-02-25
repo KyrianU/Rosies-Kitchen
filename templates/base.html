@@ -31,17 +31,15 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'food_menu' %}">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'reservation' %}">Book</a></li>
                     
-                    {% request.user.is.authenticated %}
-                    <li class="nav-item"><a class="nav-link" href="{% url 'manage reservation' %}">Manage My Reservations</a></li>
+                    {% if user.is_authenticated %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'reservation' %}">Make a reservation</a></li>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navMenuBar" role="button" data-toggle="dropdown" aria-expanded="false" 
                         aria-label="My account">My Account</a>
                         <div class="dropdown-menu" aria-labelledby="navMenuBar">
-                            <a class="dropdown-item" href="{% url 'manage_my_reservations' %">My Reservations</a>
-                            <a class="dropdown-item" href="{% url 'edit_my_reservation' %}">Update Details</a>
+                            <a class="dropdown-item" href="{% url 'my_reservations' %">My Reservations</a>
                             <a class="dropdown-item" href="{% url 'account_logout' %">Logout</a>
                         </div>
                     </li>
