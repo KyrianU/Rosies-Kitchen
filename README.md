@@ -28,3 +28,10 @@ CRUD functionality is very important when it comes to this webbapp as user inter
 
 ## Structure
 
+### Future Features
+
+- Price displayed under each menu item 
+- Allergies information under each menu item 
+- Customer newsletter keeping them aware of potential new dishes added to menu
+- Add a drinks menu
+- have a seperate lunch and dinner menu options 
