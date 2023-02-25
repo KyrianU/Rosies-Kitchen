@@ -91,6 +91,11 @@ TEMPLATES = [
 WSGI_APPLICATION = 'rosies_kitchen.wsgi.application'
 
 
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+LOGIN_REDIRECT_URL = '/'
+
+
+
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
