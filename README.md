@@ -35,3 +35,29 @@ CRUD functionality is very important when it comes to this webbapp as user inter
 - Customer newsletter keeping them aware of potential new dishes added to menu
 - Add a drinks menu
 - have a seperate lunch and dinner menu options 
+
+## Technologies Used
+
+I have used several technologies in order for this project to work 
+
+- [Bootstrap](https://getbootstrap.com/)
+    - Bootstrap was used for creating responsive design 
+- [Font Awesome](https://fontawesome.com/)
+    - font Awesome used for the social media icons on the footer
+- [Github](https://github.com/)
+    - Used to securely store code after being pushed
+- [Gitpod](https://www.gitpod.io/)
+    - Used as the developemnt environment
+- [Heroku](https://heroku.com/)
+    - Used to deploy my project 
+- [Django](https://www.djangoproject.com/)
+    - The Framework that was used to build the overall project and its app 
+- [Cloudinary](https://cloudinary.com/)
+    - Cloudinary was used to store images used on the project 
+- [Coloors](https://coolors.com/)
+    - Coloors was used to generate colour palette for the website
+
+## Deployment 
+
+### Heroku 
+
