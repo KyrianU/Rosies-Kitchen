@@ -87,3 +87,11 @@ a change has been pushed to Github, whereas the manual deployment requires the u
 - Once the method of deployment has been selected and click on "Deploy Branch", your 
 application should then be built. To see it you will need to click "view"
 
+## Credits 
+
+Throughout the whole process of building this website, I have used a number of sources that has
+helped me to fix issues/bugs that have a come across. In addition to that, I have taken some 
+inspiration on building the website's functionality from some of the source below
+
+- For the menu app, I drew inspiration from the below documents
+

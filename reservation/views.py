@@ -8,18 +8,18 @@ from django.contrib.messages.views import SuccessMessageMixin
 
 
 # Create your views here.
-class RequestReservationview(SuccessMessageMixin, CreateView):
+class RequestReservationview(CreateView):
     model = Reservation
     form_class = ReservationForm
     template_name = 'reservation.html'
-    reservation_success = '/my_reservations'
+    # reservation_success = '/my_reservations'
     reservation_message = 'Booking created'
 
 
 class ManageReservation(ListView):
 
     model = Reservation
-    template_name = '/my_reservations'
+    template_name = 'my_reservation.html'
 
 
 # Ammend selected or all reservations
