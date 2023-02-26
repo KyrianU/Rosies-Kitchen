@@ -110,4 +110,6 @@ inspiration on building the website's functionality from some of the source belo
     - (https://www.youtube.com/watch?v=GxA2I-n8NR8&list=PLOLrQ9Pn6caxNb9eFZJ6LfY29nZkKmmXT&index=1)
 - [Django Allauth](https://django-allauth.readthedocs.io/en/latest/configuration.html)
 
+## Acknolegdment 
 
+- Special thanks to my mentor for the advice and the slack community 
