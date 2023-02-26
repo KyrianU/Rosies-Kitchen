@@ -12,7 +12,7 @@ class RequestReservationview(CreateView):
     model = Reservation
     form_class = ReservationForm
     template_name = 'reservation.html'
-    # reservation_success = '/my_reservations'
+    reservation_success = '/my_reservation'
     reservation_message = 'Booking created'
 
 

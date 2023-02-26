@@ -94,4 +94,20 @@ helped me to fix issues/bugs that have a come across. In addition to that, I hav
 inspiration on building the website's functionality from some of the source below
 
 - For the menu app, I drew inspiration from the below documents
+    - (https://getbootstrap.com/docs/4.3/components/card/)
+- the carousel on the home page 
+    - (https://getbootstrap.com/docs/5.0/components/carousel/)
+- The Navbar 
+    - (https://getbootstrap.com/docs/4.3/components/navbar/)
+- Stackoverflow was used at various times to help with my model, views and form
+    - (https://stackoverflow.com/questions/849142/how-to-limit-the-maximum-value-of-a-numeric-field-in-a-django-model)
+    - (https://stackoverflow.com/questions/61076688/django-form-dateinput-with-widget-in-update-loosing-the-initial-value)
+- The Reservation model was based on the link below
+    - (https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78)
+- Unsplash for the pictures used on the app
+    - (https://unsplash.com/)
+- For the class based views, this youtube link was a big help
+    - (https://www.youtube.com/watch?v=GxA2I-n8NR8&list=PLOLrQ9Pn6caxNb9eFZJ6LfY29nZkKmmXT&index=1)
+- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/configuration.html)
+
 
