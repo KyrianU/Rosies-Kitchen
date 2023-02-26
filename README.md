@@ -61,3 +61,29 @@ I have used several technologies in order for this project to work
 
 ### Heroku 
 
+The site was deployed using [Heroku] (https://heroku.com/)
+
+The steps for the deployment are as followed: 
+
+- Login or Sign up to Heroku. 
+- Once logged/signed in, from the dashboard click 'New' then click "Create New App"
+- Enter a unique name for your project. Once you have chosen the name, select a region
+then press "Create New App"
+- Set up your Environment variables - a very important step to make sure your application
+is deployed properly
+- Navigate to "Reveal config vars" and set the following variables
+    - SECRET_KEY - to be set to your chosen key 
+    - CLOUDINARY_URL - To be set to your Cloudinary API environment 
+- Heroku Postgres must be installed
+
+In the deploy Tab
+- Click on the deploy tab and then choose "Github-Connect to Github"
+- Enter the GitHub repository then click Search
+- Choose the correct repository for your application. Once done, click on "Connect"
+- You will then be presented with the option of either an automatic deployment or a
+manual deployment. The automatic deployment will generate a new application everytime
+a change has been pushed to Github, whereas the manual deployment requires the user to 
+"Deploy Branch" button whenever the user wants to make a change.
+- Once the method of deployment has been selected and click on "Deploy Branch", your 
+application should then be built. To see it you will need to click "view"
+
