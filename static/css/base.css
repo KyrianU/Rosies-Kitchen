@@ -2,6 +2,10 @@
 
 /* General Styling */
 
+nav {
+    background-color: #951e0e;
+}
+
 body {
     background-color: #000000;
     background-image: linear-gradient(#000000 0%, #3D0C11 80%);
@@ -15,12 +19,8 @@ h1, h2 {
 
 /* Navbar */
 
-#Main-nav {
-    background-color: #951e0e;
-}
-
 .carousel-inner {
-    height: 500px;
+    height: 600px;
     width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -29,12 +29,12 @@ h1, h2 {
 .img-header {
     height: 250px;
     margin-right: 20px;
+    margin-top: 20px;
 }
 
 h4 {
     color: #FFFFFF;
 }
-
 
 /* Footer */
 
