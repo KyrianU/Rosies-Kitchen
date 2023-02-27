@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+{% for reservation in object_list %}
 <div class="container-fluid">
     <div class="row d-flex justify-content-center">
         <div class="col-sm-8 text-center">
@@ -13,7 +14,6 @@
         <div class="col-sm-12">
             <div class="row d-flex justify-content-center">
 
-                {% for reservation in reservations %}
                 <div class="col-md-6 col-lg-4">
                     <ul class="reservation-list text-center" id="{{ reservation.reservation_id }}">
                         <li class="res-item">
@@ -22,14 +22,16 @@
                         <li class="res-item">Table seats: {{ reservation.table_seats }} </li>
                         <li class="res-item">Time: {{ reservation.time }} </li>
                         <li class="res-iten">Date: <span class="res-date"
-                            id="{{ reservation.date_booked }}">{{ reservation.date_booked|date:"d/m/Y"</span>
+                            id="{{ reservation.date_booked }}">{{ reservation.date }}</span>
                         </li>
+                        {% comment %}
                         <div class="text-center">
-                            <a href="{% url 'edit_reservation' reservation.reservation.id %}"
+                            <a href="{% url 'edit_reservation' %}"
                                 class="btn btn-primary">Edit Reservation</a>
-                            <a href="{url 'delete_reservation' reservation.reservation.id %}"
+                            <a href="{url 'delete_reservation' %}"
                                 class="btn btn-warning">Cancel Reservation</a>
                         </div>
+                        {% endcomment %}
                     </ul>
                 </div>
                 {% endfor %}
