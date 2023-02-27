@@ -14,6 +14,7 @@
         <form method="POST">{% csrf_token %}
             <p>Are you sure you want to cancel this reservation? </p>
                 <button type="submit" class="btn btn-danger">Confrim</button>
+                <!--If reservation is not deleted, user will be redirected to reservation list -->
                 <a href="{% url 'my_reservations' %}" class="btn btn-primary">Cancel</a>
 
         </form>

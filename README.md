@@ -28,6 +28,71 @@ CRUD functionality is very important when it comes to this webbapp as user inter
 
 ## Structure
 
+## Wireframes
+
+### Homepage
+
+![Homepage Web view](documentations/wireframes/homepage.png)
+![Homepage Mob view](documentations/wireframes/homepagemob.png)
+
+### Menu 
+
+![Menu Web view](documentations/wireframes/menu.png)
+![Menu Mob view](documentations/wireframes/menumob.png)
+
+### Register
+
+![Register Web view](documentations/wireframes/registration.png)
+![Register Mob view](documentations/wireframes/registrationmob.png)
+
+### Login
+
+![Login Web view](documentations/wireframes/login.png)
+![Login Mob view](documentations/wireframes/loginmob.png)
+
+### Reservation
+
+![Reservation Web view](documentations/wireframes/reservation.png)
+![Reservation Mob view](documentations/wireframes/reservationMob.png)
+
+
+
+
+### Features 
+
+**Color Scheme**
+
+![Color scheme](documentations/features/color_scheme.png)
+
+**Homepage**
+The Navigation bar has all the links to the active pages for the user which are also clearly labelled. The User can 
+have a look at the menu via the navigation bar, or if the user chooses, can access the menu via the link under the 
+carousel. The same can be done with the "Book" next to the menu, the book link will direct you to the Register page.
+
+If the user is logged in, the dropdown will appear under 'My account" where "My reservation" and "logout" option 
+will appear. Another option the user will have is the option to manage their reservations.
+
+**Carousel**
+
+The images that are part of the carousel are the images of the food that is on offer on the website
+![Carousel1](documentations/features/carousel1.png)
+![Carousel2](documentations/features/carousel2.png)
+![Carousel3](documentations/features/carousel3.png)
+![Carousel4](documentations/features/carousel4.png)
+![Carousel5](documentations/features/carousel5.png)
+
+**Menu**
+
+I have chosen a very minimalistic layout for the menu page. 
+
+**Footer**
+
+The footer has all the information regarding the restaurant's opening times, the address and contact information. It 
+also the links to their social media account.
+
+![Footer](documentations/features/footer.png)
+
+
 ### Future Features
 
 - Price displayed under each menu item 
@@ -56,6 +121,7 @@ I have used several technologies in order for this project to work
     - Cloudinary was used to store images used on the project 
 - [Coloors](https://coolors.com/)
     - Coloors was used to generate colour palette for the website
+- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/configuration.html)
 
 ## Deployment 
 
