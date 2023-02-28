@@ -3,7 +3,7 @@
 {% block content %}
 <section class="container-fluid menu">
     <div class="row text-center">
-        <h1 class="mt-4 p-4">Our Menu</h1>
+        <h1 class="mt-4 p-4">Rosie's Menu</h1>
         <hr>
     </div>
 
@@ -15,14 +15,14 @@
 
             <div class="row m-2 d-flex justify-content-center flex-wrap text-center">
                 {% for food in object_list %} 
-                
+                {% if food.item == 'Starter' %}
                 <div class="card text-white bg-dark mb-3" style="width: 20rem;">
                     <div class="card-header">{{ food.name }}</div>
                     <div class="card-body">
                         <p class="card-text">{{ food.descripion }}</p>
                     </div>
                 </div>
-                
+                {% endif %}
                 {% endfor %} 
             </div>
         </div>
@@ -33,14 +33,14 @@
 
             <div class="row m-2 d-flex justify-content-center flex-wrap text-center">
                 {% for food in object_list %} 
-               
+                {% if food.item == 'Main' %}
                 <div class="card text-white bg-dark mb-3" style="width: 20rem;">
                     <div class="card-header">{{ food.name }}</div>
                     <div class="card-body">
                         <p class="card-text">{{ food.description }}</p>
                     </div>
                 </div>
-                
+                {% endif %}
                 {% endfor %}
             </div>
         </div>
@@ -50,14 +50,14 @@
             <hr>
             <div class="row m-2 d-flex justify-content-center flex-wrap text-center">
                 {% for food in object_list %} 
-                
+                {% if food.item == 'Dessert' %}
                 <div class="card text-white bg-dark mb-3" style="width: 20rem;">
                 <div class="card-header">{{ food.name }}</div>
                 <div class="card-body">
                     <p class="card-text">{{ food.description }}</p>                      
                 </div>
             </div>
-                
+                {% endif %}
                 {% endfor %} 
             </div>
         </div>

@@ -16,7 +16,7 @@ class ReservationFormView(FormView):
     success_url = '/reservation/my_reservation/'
 
     def form_valid(self, form):
-        form = form.save(commit=False)  
+        form = form.save(commit=False)
         user = User.objects.get(username=self.request.user.username)
         form.user = user
 
@@ -46,11 +46,12 @@ class ReservationEdit(SuccessMessageMixin, UpdateView):
     model = Reservation
     form_class = ReservationForm
     template_name = 'edit_reservation.html'
-    reservation_sucess = 'my_reservations'
+    success_url = reverse_lazy('my_reservation')
     reservation_message = 'Reservation Updated!'
 
 
 # Delete selected or all reservations
 class ReservationDelete(SuccessMessageMixin, DeleteView):
     model = Reservation
-    reservation_success = reverse_lazy('my_reservations')
+    template_name = 'delete_reservation.html'
+    success_url = reverse_lazy('my_reservation')

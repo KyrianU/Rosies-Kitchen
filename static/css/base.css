@@ -50,3 +50,9 @@ footer {
  
 }
 
+/* Reservation */
+
+.res-item,
+.res-date {
+    list-style: none;
+}
