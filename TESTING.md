@@ -13,9 +13,12 @@ to return to the readme file please click here [README](README.md)
 
 #### Opening time 
 - As a user, I would like to know the opening time in order to make a reservation accordingly 
+![Opening times](documentations/features/footer.png)
 
-#### Admin Login 
-- 
+## Admin login
+- As an admin, I want to be able to log in the admin panel and delete accounts of my choice
+![Admin panel](documentations/images/admin%20login.png)
+![Admin panel](documentations/images/adminpanel.png)
 
 
 # Bugs 
