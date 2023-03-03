@@ -85,6 +85,28 @@ The images that are part of the carousel are the images of the food that is on o
 
 I have chosen a very minimalistic layout for the menu page. 
 
+![Menu](documentations/features/menu.png)
+
+**Register**
+
+![Register](documentations/features/Register.png)
+
+**Login**
+
+![Login](documentations/features/login.png)
+
+**Make a reservation** 
+
+![Reservation](documentations/features/reservation.png)
+
+**Edit reservation**
+
+![Edit Reservation](documentations/features/edit.png)
+
+**Delete reservation**
+
+![Delete Reservation](documentations/features/delete.png)
+
 **Footer**
 
 The footer has all the information regarding the restaurant's opening times, the address and contact information. It 
@@ -172,6 +194,8 @@ inspiration on building the website's functionality from some of the source belo
     - (https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78)
 - Unsplash for the pictures used on the app
     - (https://unsplash.com/)
+- Pexels for the picture used on the carousel 
+    - (https://www.pexels.com/)
 - For the class based views, this youtube link was a big help
     - (https://www.youtube.com/watch?v=GxA2I-n8NR8&list=PLOLrQ9Pn6caxNb9eFZJ6LfY29nZkKmmXT&index=1)
 - [Django Allauth](https://django-allauth.readthedocs.io/en/latest/configuration.html)
