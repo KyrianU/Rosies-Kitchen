@@ -9,6 +9,8 @@ from django.contrib.auth.models import User
 
 from django.views.generic.edit import FormView
 
+# View of the request reservation page
+
 
 class ReservationFormView(FormView):
     template_name = 'reservation.html'
@@ -30,6 +32,8 @@ class RequestReservationview(CreateView):
     template_name = 'reservation.html'
     reservation_success = '/my_reservation'
     reservation_message = 'Booking created'
+
+# Display a list of all reservation
 
 
 class ManageReservation(ListView):

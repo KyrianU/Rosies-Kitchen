@@ -7,8 +7,8 @@
     <div class="container">
         <div class="row justify-content-md-center">
             <h1 class="m4 text-center">Request a Reservation</h1>
-            <div class="col-6">
-                <form method="POST" class="reservation-form full-form">
+            <div class="col-xs-10 col-sm-6 col-md-8 col-lg-6 col-xl-5">
+                <form method="POST" class="reservation-form">
                     {% csrf_token %} 
                     {{ form|crispy }}
                 <br>

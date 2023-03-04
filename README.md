@@ -10,7 +10,7 @@ Rosie's kitchen is a retaurant website designed to display the user their menu &
 ## Strategy 
 I used an Agile methodology when planning the planning the project, with the use of projects and issues. I used issues to create the user stories for this project which served as a guidelines for building the project.
 
-CRUD functionality is very important when it comes to this webbapp as user interaction is everything. The user is able to create a booking, the webapp will then display all the bookings the user has made, the user will then have the options to either update their bookings or delete any booking they have. With the help of validation being implemented in the webapp, users are unble to make two identical reservations. 
+CRUD functionality is very important when it comes to this webbapp as user interaction is everything. The user is able to create a booking, the webapp will then display all the bookings the user has made, the user will then have the options to either update their bookings or delete any booking they have. 
 
 ## User Stories
 
@@ -55,8 +55,9 @@ CRUD functionality is very important when it comes to this webbapp as user inter
 ![Reservation Web view](documentations/wireframes/reservation.png)
 ![Reservation Mob view](documentations/wireframes/reservationMob.png)
 
+## Database
 
-
+![Database](documentations/images/Database%20diagram.png)
 
 ### Features 
 
@@ -145,6 +146,9 @@ I have used several technologies in order for this project to work
     - Coloors was used to generate colour palette for the website
 - [Django Allauth](https://django-allauth.readthedocs.io/en/latest/configuration.html)
 
+# Testing 
+- For all testing documents please refer to [Testing](TESTING.md)
+
 ## Deployment 
 
 ### Heroku 
@@ -190,6 +194,7 @@ inspiration on building the website's functionality from some of the source belo
 - Stackoverflow was used at various times to help with my model, views and form
     - (https://stackoverflow.com/questions/849142/how-to-limit-the-maximum-value-of-a-numeric-field-in-a-django-model)
     - (https://stackoverflow.com/questions/61076688/django-form-dateinput-with-widget-in-update-loosing-the-initial-value)
+    - (https://stackoverflow.com/questions/50002600/django-models-datefield-prevent-past)
 - The Reservation model was based on the link below
     - (https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78)
 - Unsplash for the pictures used on the app

@@ -50,3 +50,10 @@ footer {
 .res-date {
     list-style: none;
 }
+
+@media screen and (max-width: 400px){
+    .carousel-inner {
+        width: 500px;
+    }
+    
+}

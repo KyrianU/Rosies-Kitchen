@@ -8,7 +8,7 @@ class ReservationForm(forms.ModelForm):
 
     class Meta:
         model = Reservation
-        fields = ('table_seats', 'name', 'date', 'time')
+        fields = ('name', 'table_seats', 'date', 'time')
         widgets = {
             'date': forms.DateInput(
                 format=('%Y-%m-%d'),
@@ -34,7 +34,7 @@ class ReservationsEdit(forms.ModelForm):
 
     class Meta:
         model = Reservation
-        fields = ('table_seats', 'name', 'date', 'time')
+        fields = ('name', 'table_seats', 'date', 'time')
         widgets = {
             'date': forms.DateInput(
                 format=('%Y-%m-%d'),
