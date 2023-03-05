@@ -86,7 +86,11 @@ with no errors
 ## HTML
 - While testing my html files I came across a few errors to which needed rectifying. I managed
 to rectify all the minor errors to the best of my knowlegde
-!
+![](documentations/images/html.png)
+
+## PEP8
+
+- Other than the fact that some lines were too long (which was a quick fix), there was no errors
 
 # Bugs 
 

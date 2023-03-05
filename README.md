@@ -1,5 +1,7 @@
 # Rosie's Kitchen
 
+![](documentations/images/Am-I-Responsive.png)
+
 ## Introdution
 
 Rosie's kitchen is a retaurant website designed to display the user their menu & enable the user to make/ammend/edit reservations. This project is stricly for educational purposes

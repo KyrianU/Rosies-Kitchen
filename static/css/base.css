@@ -16,15 +16,15 @@ h1, h2 {
 /* Navbar */
 
 .carousel-inner {
-    height: 550px;
-    width: 900px;
+    height: 600px;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .img-header {
     height: 300px;
-    margin-left: -50px;
+    margin-left: -65px;
     border-radius: 4px;
 }
 
