@@ -48,6 +48,45 @@ suitable for the user
 ![Admin panel](documentations/images/admin%20login.png)
 ![Admin panel](documentations/images/adminpanel.png)
 
+# Browser Responsiveness
+
+## Iphone SE
+ ![Iphone Se](documentations/images/homepageSE.png)
+ ![Iphone Se](documentations/images/homepageSe2.png)
+ ![Iphone Se](documentations/images/Menu-Se.png)
+
+## Iphone 12 
+![Iphone 12](documentations/images/Iphone12.png)
+![Iphone12](documentations/images/Iphone12-1.png)
+
+## Samsung Galaxy s8
+![Galaxy S8](documentations/images/GalaxyS8.png)
+![Galaxy S8](documentations/images/Galaxys8.png)
+
+## Ipad 
+![Ipad](documentations/images/homepageAir.png)
+![Ipad](documentations/images/homepageAir2.png)
+
+## Firefox 
+![Firefox](documentations/images/Firefox.png)
+
+## Safari 
+![Safari](documentations/images/Safari.png)
+
+## Chrome
+![Chrome](documentations/images/Chrome.png)
+
+# Code Validation
+
+## Css
+-I used [Jigsaw] as tool to validate/check my css code has no issues/errors. The report came back
+with no errors
+![Jigsaw](documentations/images/Css%20Validation.png)
+
+## HTML
+- While testing my html files I came across a few errors to which needed rectifying. I managed
+to rectify all the minor errors to the best of my knowlegde
+!
 
 # Bugs 
 
