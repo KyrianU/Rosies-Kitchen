@@ -6,21 +6,21 @@
         <h1 class="mt-4 p-4">Rosie's Menu</h1>
         <hr>
     </div>
-
-    <div class="row text-center">
-    <!--Menu section sepearated in 3 sections starters, main and desserts, Menu displayed in
+ <!--Menu section sepearated in 3 sections starters, main and desserts, Menu displayed in
     cards under their respective column-->
+    <div class="row text-center">
+   
         <div class="col-starters">
-            <h2>Starters</h2>
+            <h2><i>Starters</i></h2>
             <hr>
 
             <div class="row m-2 d-flex justify-content-center flex-wrap text-center">
                 {% for food in object_list %} 
                 {% if food.item == 'Starter' %}
-                <div class="card text-white bg-dark mb-3" style="width: 20rem;">
-                    <div class="card-header">{{ food.name }}</div>
+                <div class="card text-white bg-dark mb-3" style="width: 22rem;">
+                    <div class="card-title">{{ food.name }}</div>
                     <div class="card-body">
-                        <p class="card-text">{{ food.descripion }}</p>
+                        <p class="card-text">{{ food.description }}</p>
                     </div>
                 </div>
                 {% endif %}
@@ -28,15 +28,15 @@
             </div>
         </div>
 
-        <div class="col mains">
-            <h2>Mains</h2>
+        <div class="col-mains">
+            <h2><i>Mains</i></h2>
             <hr>
 
             <div class="row m-2 d-flex justify-content-center flex-wrap text-center">
                 {% for food in object_list %} 
                 {% if food.item == 'Main' %}
-                <div class="card text-white bg-dark mb-3" style="width: 20rem;">
-                    <div class="card-header">{{ food.name }}</div>
+                <div class="card text-white bg-dark mb-3" style="width: 22rem;">
+                    <div class="card-title">{{ food.name }}</div>
                     <div class="card-body">
                         <p class="card-text">{{ food.description }}</p>
                     </div>
@@ -46,14 +46,14 @@
             </div>
         </div>
 
-        <div class="col desserts">
-            <h2>Desserts</h2>
+        <div class="col-desserts">
+            <h2><i>Desserts</i></h2>
             <hr>
             <div class="row m-2 d-flex justify-content-center flex-wrap text-center">
                 {% for food in object_list %} 
                 {% if food.item == 'Dessert' %}
-                <div class="card text-white bg-dark mb-3" style="width: 20rem;">
-                <div class="card-header">{{ food.name }}</div>
+                <div class="card text-white bg-dark mb-3" style="width: 22rem;">
+                <div class="card-title">{{ food.name }}</div>
                 <div class="card-body">
                     <p class="card-text">{{ food.description }}</p>                      
                 </div>
