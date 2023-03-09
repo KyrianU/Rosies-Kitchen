@@ -87,7 +87,7 @@ The images that are part of the carousel are the images of the food that is on o
 
 I have chosen a very minimalistic layout for the menu page. 
 
-![Menu](documentations/features/menu.png)
+![Menu](documentations/features/Menu.png)
 
 **Register**
 
